@@ -1,0 +1,85 @@
+.header-container {
+  width: 100%;
+  height: 95px;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+.header-container1 {
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffc107;
+}
+.header-container2 {
+  flex: 0 0 auto;
+  width: 142px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+.header-lottie-node {
+  width: 83px;
+  height: 93px;
+}
+.header-text {
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.header-container3 {
+  flex: 0 0 auto;
+  width: 323px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.header-button {
+  box-shadow: 5px 5px 9px 0px #4c4c4c;
+  border-width: 0px;
+  border-radius: 0px;
+  animation-name: flash;
+  animation-delay: 0s;
+  background-color: #ffc107;
+  animation-duration: 300ms;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+}
+.header-button1 {
+  box-shadow: 5px 5px 9px 0px #4c4c4c;
+  border-width: 0px;
+  border-radius: 0px;
+  background-color: #ffc107;
+}
+.header-button2 {
+  box-shadow: 5px 5px 9px 0px #4c4c4c;
+  border-width: 0px;
+  border-radius: 0px;
+  background-color: #ffc107;
+}
+.header-container4 {
+  flex: 0 0 auto;
+  width: 200px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.header-button3 {
+  border-radius: var(--dl-radius-radius-radius8);
+  background-color: #ffd955;
+}
+.header-button4 {
+  border-radius: var(--dl-radius-radius-radius8);
+}
