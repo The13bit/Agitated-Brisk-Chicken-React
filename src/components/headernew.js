@@ -3,7 +3,6 @@ import React from 'react'
 import { Player } from '@lottiefiles/react-lottie-player'
 import PropTypes from 'prop-types'
 
-import Newbtn from './newbtn'
 import './headernew.css'
 
 const Headernew = (props) => {
@@ -20,15 +19,33 @@ const Headernew = (props) => {
         <span className="headernew-text">{props.ngo}</span>
         <div data-thq="thq-navbar-nav" className="headernew-desktop-menu">
           <nav className="headernew-links">
-            <Newbtn rootClassName="newbtn-root-class-name"></Newbtn>
-            <Newbtn
-              button1="Contact"
-              rootClassName="newbtn-root-class-name2"
-            ></Newbtn>
-            <Newbtn
-              button1="Info"
-              rootClassName="newbtn-root-class-name1"
-            ></Newbtn>
+            <div className="headernew-container1">
+              <button
+                type={props.buttonType}
+                onClick
+                className="headernew-button button"
+              >
+                {props.button1}
+              </button>
+            </div>
+            <div className="headernew-container2">
+              <button
+                type={props.buttonType1}
+                onClick
+                className="headernew-button1 button"
+              >
+                {props.button11}
+              </button>
+            </div>
+            <div className="headernew-container3">
+              <button
+                type={props.buttonType2}
+                onClick
+                className="headernew-button2 button"
+              >
+                {props.button12}
+              </button>
+            </div>
           </nav>
           <div className="headernew-buttons">
             <button className="headernew-register button">Donate</button>
@@ -93,11 +110,35 @@ const Headernew = (props) => {
 Headernew.defaultProps = {
   ngo: 'Contact',
   text: 'Text',
+  rootClassName: '',
+  buttonType: 'button',
+  button1: 'About',
+  buttonOnClick: "{() => handleRedirect('/contact')}",
+  rootClassName1: '',
+  buttonType1: 'button',
+  button11: 'About',
+  buttonOnClick1: "{() => handleRedirect('/contact')}",
+  rootClassName2: '',
+  buttonType2: 'button',
+  button12: 'About',
+  buttonOnClick2: "{() => handleRedirect('/contact')}",
 }
 
 Headernew.propTypes = {
   ngo: PropTypes.string,
   text: PropTypes.string,
+  rootClassName: PropTypes.string,
+  buttonType: PropTypes.string,
+  button1: PropTypes.string,
+  buttonOnClick: PropTypes.string,
+  rootClassName1: PropTypes.string,
+  buttonType1: PropTypes.string,
+  button11: PropTypes.string,
+  buttonOnClick1: PropTypes.string,
+  rootClassName2: PropTypes.string,
+  buttonType2: PropTypes.string,
+  button12: PropTypes.string,
+  buttonOnClick2: PropTypes.string,
 }
 
 export default Headernew
