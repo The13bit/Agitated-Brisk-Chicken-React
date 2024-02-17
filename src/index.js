@@ -11,6 +11,7 @@ import './style.css'
 import Home from './views/home'
 import Contact from './views/contact'
 import About from './views/about'
+import Donation from './views/donation'
 import NotFound from './views/not-found'
 
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
         <Route component={Home} exact path="/" />
         <Route component={Contact} exact path="/contact" />
         <Route component={About} exact path="/about" />
+        <Route component={Donation} exact path="/donation" />
         <Route component={NotFound} path="**" />
         <Redirect to="**" />
       </Switch>
