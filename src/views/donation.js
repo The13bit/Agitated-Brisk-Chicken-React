@@ -67,24 +67,24 @@ const Donation = (props) => {
       </div>
       <div className="donation-container2">
         <div className="donation-container3">
-          <h1>Donate</h1>
-          <button type="button" className="donation-button button">
-            <span className="donation-text4">
-              <span>Net </span>
-              <span>Banking</span>
-              <br></br>
-            </span>
-          </button>
-          <button type="button" className="donation-button1 button">
-            Gpay
-          </button>
-          <input
-            type="text"
-            placeholder="Enter Amount"
-            className="donation-textinput input"
-          />
+          <h1 className="donation-text3">Donate</h1>
+          <div className="donation-container4">
+            <input type="text" placeholder="Enter Amount" className="input" />
+            <div className="donation-container5">
+              <button type="button" className="button">
+                Gpay
+              </button>
+              <button type="button" className="donation-button1 button">
+                <span className="donation-text4">
+                  <span>Net </span>
+                  <span>Banking</span>
+                  <br></br>
+                </span>
+              </button>
+            </div>
+          </div>
         </div>
-        <div className="donation-container4">
+        <div className="donation-container6">
           <img
             alt="image"
             src="https://play.teleporthq.io/static/svg/default-img.svg"
