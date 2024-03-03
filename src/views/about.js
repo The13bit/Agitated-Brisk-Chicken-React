@@ -9,8 +9,8 @@ const About = (props) => {
   return (
     <div className="about-container">
       <Helmet>
-        <title>About - Agitated Brisk Chicken</title>
-        <meta property="og:title" content="About - Agitated Brisk Chicken" />
+        <title>About - TEST</title>
+        <meta property="og:title" content="About - TEST" />
       </Helmet>
       <div className="about-container01">
         <span className="about-text">

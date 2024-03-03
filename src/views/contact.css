@@ -2,7 +2,7 @@
   gap: var(--dl-space-space-twounits);
   width: 100%;
   display: flex;
-  overflow: auto;
+  overflow: hidden;
   min-height: 100vh;
   align-items: center;
   flex-direction: column;
@@ -116,21 +116,35 @@
   font-size: 20px;
 }
 .contact-container08 {
-  gap: var(--dl-space-space-fourunits);
+  gap: var(--dl-space-space-unit);
   width: 100%;
   height: 764px;
   display: flex;
   align-self: flex-start;
+  margin-top: 0px;
   align-items: center;
   margin-left: var(--dl-space-space-twounits);
+  margin-right: var(--dl-space-space-twounits);
+  margin-bottom: 0px;
   justify-content: center;
 }
 .contact-container09 {
-  width: 763px;
+  flex: 0 0 auto;
+  width: 50%;
+  border: 2px dashed rgba(120, 120, 120, 0.4);
   height: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
 }
 .contact-container10 {
-  display: contents;
+  flex: 0 0 auto;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 .contact-form {
   gap: var(--dl-space-space-unit);
@@ -228,7 +242,7 @@
     padding-bottom: 0px;
   }
   .contact-container09 {
-    height: 578px;
+    display: none;
   }
   .contact-form {
     width: 402px;
@@ -248,6 +262,9 @@
     width: 100%;
   }
   .contact-textarea {
+    width: 100%;
+  }
+  .contact-button {
     width: 100%;
   }
 }
@@ -290,8 +307,5 @@
   }
   .contact-text11 {
     text-align: center;
-  }
-  .contact-container09 {
-    width: 478px;
   }
 }

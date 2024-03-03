@@ -9,12 +9,13 @@ const Home = (props) => {
   return (
     <div className="home-container">
       <Helmet>
-        <title>Agitated Brisk Chicken</title>
-        <meta property="og:title" content="Agitated Brisk Chicken" />
+        <title>TEST</title>
+        <meta property="og:title" content="TEST" />
       </Helmet>
       <div className="home-container01">
         <div
           data-thq="slider"
+          data-autoplay="false"
           data-navigation="true"
           data-pagination="true"
           className="home-slider swiper"
